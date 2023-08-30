@@ -3,9 +3,13 @@ import { Counter } from "./features/counter/Counter";
 import "./App.css";
 
 const App: React.FC = () => {
+  const [status, setStatus] = useState<string>("text");
+
   return (
     <div className="App">
       <header className="App-header">
+        <h4>{status}</h4>
+        <button onClick={() => setStatus("new text")}>Button</button>
         <Counter />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
