@@ -10,6 +10,11 @@ const App: React.FC = () => {
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value);
   };
+  useEffect(() => {
+    console.log("useEffect in App invoked !");
+    document.title = `current value is ${counter}`;
+  }, [counter]);
+
   return (
     <div className="App">
       <header className="App-header">
