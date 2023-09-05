@@ -28,7 +28,7 @@ const App: React.FC = () => {
         <button onClick={() => setCounter((preCounter) => preCounter + 1)}>
           Increment
         </button>
-        <CleanUp />
+        {display && <CleanUp />}
 
         <Counter />
         <p>
