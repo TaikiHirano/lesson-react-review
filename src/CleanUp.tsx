@@ -11,7 +11,7 @@ const CleanUp: React.FC = () => {
   useEffect(() => {
     console.log("useEffect in CleanUp invoked");
     window.addEventListener("mousedown", incrementNum);
-  });
+  }, []);
   return <div>{currentNum}</div>;
 };
 

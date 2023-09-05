@@ -29,7 +29,7 @@ const App: React.FC = () => {
           Increment
         </button>
         {display && <CleanUp />}
-
+        <button onClick={() => setDisplay(!display)}>Toggle display</button>
         <Counter />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
